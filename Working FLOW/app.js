@@ -1,0 +1,1 @@
+console.log('Partie 15 - Yhea yhea !! ');
