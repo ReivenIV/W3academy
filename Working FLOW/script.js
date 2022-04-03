@@ -974,9 +974,16 @@ alert (result)
 */
 
 
-/*
+/* 
+8. Récupérer une liste d'éléments avec un sélecteur css 
+var result;
+var longueur;
 
-
+result = document.querySelectorAll("li");
+longueur = result.length;
+for(var i = 0; i < longueur; i++) {
+	alert(result[i])
+}
  */
 
 
