@@ -988,49 +988,69 @@ for(var i = 0; i < longueur; i++) {
 
 
 
+// --------------------------------------------------------------------------------------------------
+                                        //LEÇON 2 Modifier un élément HTML
+
+/* 
+1. Modifier le HTML d'un élément 
+var recup = document.querySelector('div > p');
+recup.innerHTML = "Dernier paragraphe";
+alert(recup);
+*/
 
 /*
+2. Modifier la valeur d'un attribut 
+var a = document.querySelector('a');
+a.innerHTML = "News Google";
+a.href = 'https://news.google.fr/'
+*/
+
+/* 
+3. Ajouter un attribut 
+var a = document.querySelector("ul>li>a");
+a.href = "https://news.google.fr/";
+a.innerHTML = "News Google";
+a.setAttribute("title","Les news Google");
+*/
+
+/*
+4. Modifier une propriété css 
+var recup = document.querySelector('div');
+recup.style.color = "blue";
+*/
 
 
- */
+/* 
+5. Sélecteur de photos 1/3 
+var photos;
+var index;
+var total;
+
+photos = document.querySelectorAll('.photo-list li');
+index = photos.length;
+total = document.querySelector('#total em')
+*/
 
 
 
 
 /*
+var photos;
+var index;
+var total;
 
-
- */
-
-
-
-
-/*
-
-
- */
-
-
-
-
-/*
-
-
- */
+function onClickListItem () {
+	
+}
+for(index = 0; index < photos.length; index++) {
+		photos[index].addEventListener('click', onClickListItem);
+	}
 
 
 
-
-/*
-
-
- */
-
-
-
-
-/*
-
+photos = document.querySelectorAll('.photo-list li');
+index = photos.length;
+total = document.querySelector('#total em')
 
  */
 
