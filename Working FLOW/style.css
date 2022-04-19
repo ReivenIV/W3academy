@@ -1,0 +1,337 @@
+
+/* -------------------------------------------------------------------------------------- */
+/* CSS - Apprendre HTML ->> Dans ce cours vous allez apprendre les bases du CSS */
+
+/*                                       Comprendre le CSS
+                        LEÇON 1 Le CSS pour donner un style à vos pages HTML
+*/
+
+
+/*
+2. Qu'est-ce que le CSS : Cascading Style Sheets 
+p {
+    color: red;
+}
+span {
+    color: blue;
+}
+
+
+
+3. Pourquoi utiliser les feuilles de style CSS
+p {
+    font-size: 24px;
+}
+span {
+    font-family: cursive;
+}
+
+4. Lier une feuille de style CSS dans le HEAD ou les balises STYLE
+->> rien a faire 
+
+5. Lier CSS et HTML avec les attributs TYPE, REL et HREF
+<link type="text/css"rel="stylesheet"href="stylesheet.css">
+
+6. Les balises auto-fermantes pour lier CSS et HTML
+->>rien a faire
+
+
+7. La syntaxe CSS pour définir le style des éléments HTML
+p {
+    color: green;
+}
+
+8. Un sélecteur,beaucoup de propriétés
+p {
+    color: green;
+    font-family: Garamond;
+    font-size: 24px;
+}
+
+9. Utiliser le CSS pour changer la forme d'une page HTML 
+h3 {
+    color: red;
+}
+p {
+    font-family: Courier;
+}
+span {
+    background-color: yellow;
+}
+
+10. Utiliser les points-virgules et les accolades pour votre document CSS
+h3 {
+    font-family: Verdana;
+    color: blue;
+}
+p {
+    font-family: Garamond;
+    font-size: 16px;
+}
+
+
+
+
+11. Mettre des commentaires sur une feuillet de style CSS
+
+p {
+    color: red; <--Il faut mettre les simbols pour commaintaires
+}
+
+
+
+
+12. Coder une page HTML et une feuille de style CSS
+h1 {
+	font-family: Verdana;
+}
+h3 {
+	font-family: Courier;
+}
+p {
+	color: purple;
+}
+--Rajouter commentaire--
+
+
+ 
+13. Les valeurs hexadécimales pour les couleurs en HTML
+----->  rien à rajouter au code déjà existant 
+
+
+14. Les codes couleurs HTML avec les valeurs hexadécimales 
+h3 {
+	color:#cc6666}
+
+h2 {
+	color:#8a2be2;
+}
+
+
+
+15. Définir la taille d'une police en pixels ou en EMS
+----->  rien à rajouter au code déjà existant 
+
+
+
+
+16. 3 types de Font en CSS : Serif, Sans-serif, Cursive
+h1 {
+    font-family: serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+h3 {
+    font-family: cursive;
+}
+
+
+17. Utiliser des valeurs de secours pour les Fonts en CSS
+h1 {
+    font-family: Times, Serif;
+}
+h2 {
+    font-family: Verdana, Sans-serif;
+}
+h3 {
+    font-family: Vavaldi, Cursive;
+}
+
+
+
+18. Résumé : Donner du style à votre page HTML avec le CSS
+h1 {
+    color: #32CD32;
+    font-size: 2.5em;
+    font-family: Verdana;
+}
+p {
+    font-size: 1.5em;
+    font-family: Verdana, Sans-serif;
+}
+span {
+    color: #1e90ff;
+    font-size: 2em;
+}
+
+
+
+
+
+19. Couleur d'arrière-plan, hauteur et largeur en HTML
+div {
+    background-color: #cc0000;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+20. Créer un style de bordure de tableau avec la propriété BORDER
+td {
+    height: 50px;
+    width: 50px;
+    border: 1px dashed blue;
+}
+
+table {
+    border: 1px solid black;
+}
+
+
+
+
+
+21. Définir un style pour les liens avec le CSS
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+
+
+
+22. Rappel : Lier une feuillet de style CSS à une page HTML
+<link rel="stylesheet"href="stylesheet.css"type="text/css">
+
+
+
+
+
+
+23. Rappel : La syntaxe à utiliser en CSS
+h1 {
+
+    font-family: Verdana;
+    color: #576d94;
+}
+
+p {
+    font-size: 1em;
+    color: #4a4943;
+}
+
+
+
+24. Rappel : Utiliser des polices de secours pour les fonts en CSS
+h1 {
+    font-family: Garamond, sans-serif;
+    color: #576d94;
+}
+
+p {
+    font-family: Garamond, serif;
+    font-size: 1em;
+    color: #4a4943;
+}
+
+
+
+
+25. Rappel : Dimensionner un élément HTML
+img {
+    height: 100px;
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+
+26. Rappel : Utiliser la propriété BOX en CSS
+Il faut rajouter un lien sur HTML: <a href="google.com">Google </a>
+
+apres sur css:
+a {
+    text-decoration: none;
+    color: #cc0000;
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+                        LEÇON 2 Créer un bouton avec le CSS sur une page HTML
+
+
+1. Introduction : Créer un bouton HTML à partir d'un lien
+Clicker sur soumettre tranquilement.
+
+
+
+
+
+
+2. Utiliser une balise de type bloc pour créer un bouton HTML
+sur html => <a href="google.com">Cliquez ici</a>
+
+
+
+
+
+3. Mettre un forme un bouton avec le CSS
+a {
+    display: block;
+    border: 1px solid #0066ff;
+}
+
+
+
+
+
+4. Positionner un bouton en HTML avec la propriété MARGIN
+a {
+    display: block;
+    border: 1px solid #0066ff;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+5. Mettre en forme le texte d'un bouton HTML 
+a {
+    display: block;
+    border: 1px solid #0066ff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0066ff;
+}
+
+
+
+6. Mettre en forme un bouton HTML avec la propriété PADDING
+a {
+    display: block;
+    border: 1px solid #0066ff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0066ff;
+    background-color: #a3c8ff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+*/
