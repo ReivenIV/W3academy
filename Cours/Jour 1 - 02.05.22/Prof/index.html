@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<!-- l'attribut lang indique au navigateur le language de notre site -->
+
+<head>
+    <!-- ici c'est l'entête de ma page (invisible par l'utilisateur) indique des informations (communique) au serveur -->
+    <meta charset="UTF-8"><!-- indique au navigateur qu'on veut traduire les accents et charactère spéciaux -->
+    <title>First HTML</title><!-- titre de notre page html -->
+    <!-- on branche notre fichier externe css avec la balise link-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <!-- JE SUIS UN COMMENTAIRE -->
+    <!--entête de notre partie visible du site-->
+    <header>
+        <!-- toute la partie visible de notre html par l'utilisateur !-->
+        <h1>Mon Titre Principal</h1> <!-- plusieurs niveau de titres h1, h2, h3, h4, h5, h6 -->
+        <!-- nav = menu -->
+        <nav>
+            <!-- la balise a nous permet de créer des liens (externes ou pages internes ou des ancres) -->
+            <a href="https://laposte.fr">La Poste</a>
+            <a href="https://3wa.fr">3wa</a>
+            <a href="https://google.fr">Google</a>
+        </nav>
+    </header>
+    <!--corps du site-->
+    <main>
+        <h2>Mon Titre Secondaire</h2>
+        <h3>Titre moins important</h3>
+        <h4>Titre encore moins important</h4>
+        <h5>Je suis un h5</h5>
+        <h6>Je suis un h6</h6>
+
+        <!-- balise de paragraphe par défaut ne va pas à la ligne, si je veut mettre à la ligne j'utilise la balise <br> 
+            span nous permet d'isoler un morceau de texte, 
+            la balise b ou strong nous permet de mettre du texte en gras, 
+            la balise em nous permet de mettre notre texte en italic-->
+        <p>Je suis <strong>un paragraphe</strong>, je peut faire autant de lignes que je veux et <em>même en
+                italic</em>. <br>Je vais <span style="font-weight: bold; color: red;">à la ligne</span> grâce à la
+            balise br!</p>
+
+        <!-- balise pour afficher une image (orpheline) 
+            l'atribut alt (important) = alternative text pour les lecteurs d'écran des personnes non voyantes (décrit l'image), obligatoire
+            
+            si vous voulez que le lecteur d'écran ne prenne pas en compte l'image, on va mettre un alt="" le screen reader va comprendre qu'il faut ignorer l'image
+            
+            pour une bonne pratique d'accessibilité, ne jamais mettre les même textes alternatif
+        -->
+
+        <img src="https://www.masculin.com/wp-content/uploads/sites/2/article/13438/chuck-norris.jpg.webp" width="200px"
+            alt="chuck norris avec des flingues" />
+        <!-- hr est un séparateur (peu utilisé) -->
+
+        <hr>
+
+        <!-- balise a pour le liens, l'attribut style nous permet de créer une mise en page (css) directement dans notre HTML (déconseillé) -->
+        <a href="https://google.fr" style="color: red;">Clique ici amigo!</a>
+
+        <!-- balises de liste ul = non numéroté ol = numéroté -->
+        <ul>
+            <li><a href="https://laposte.fr">La Poste</a></li>
+            <li><a href="https://3wa.fr">3wa</a></li>
+            <li><a href="https://google.fr">Google</a></li>
+        </ul>
+        <ol>
+            <li>élément 1</li>
+            <li>élément 2</li>
+            <li>élément 3</li>
+        </ol>
+
+        <!-- balise de container (bcp utilisé) pour structurer notre site-->
+        <section class="display">
+            <h2>Ma section</h2>
+            <!-- indique au navigateur qu'il s'agit d'un article bien définit-->
+            <article class="coucou">
+                <h3>Article 1</h3>
+                <p>Paragraphe 1</p>
+            </article>
+            <article class="coucou">
+                <h3>Article 2</h3>
+                <p>Paragraphe 2</p>
+            </article>
+        </section>
+
+
+        <article>
+            <img src="https://www.telerama.fr/sites/tr_master/files/styles/968x546/public/3-bloodsporttouslescoupss.jpg?itok=WxSkCmAB"
+                id="jcvd-left" />
+            <p>Coucou je suis JCVD le mec le plus aware de la planète parce que les serpents sont gentil! Si t'es chaud
+                on se fait une petite baston avec chuck norris... Je pense que ça va être rock n roll!</p>
+            <div class="clear"></div><!-- je déconseille -->
+        </article>
+
+        <article class="clear">
+            <img src="https://www.telerama.fr/sites/tr_master/files/styles/968x546/public/3-bloodsporttouslescoupss.jpg?itok=WxSkCmAB"
+                id="jcvd-right" />
+            <p>Coucou je suis JCVD le mec le plus aware de la planète parce que les serpents sont gentil! Si t'es chaud
+                on se fait une petite baston avec chuck norris... Je pense que ça va être rock n roll!</p>
+        </article>
+    </main>
+
+    <!--<aside>
+        
+    </aside>-->
+    <!--Pied de page du site-->
+    <footer>
+
+    </footer>
+    <!-- ici on déclarera notre fichier js -->
+</body>
+
+</html>

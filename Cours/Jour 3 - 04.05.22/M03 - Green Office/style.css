@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Oswald-Light";
+    src: url(font/Oswald-Light.ttf);
+}
+
+.clear {
+    overflow: auto;    
+}
+
+body{
+    background-image: url(img/fond.png);
+    max-width: 750px;
+    margin: auto;
+}
+
+a:hover {
+    background-color: rgba(218, 165, 32, 0.212);
+    color: black;
+    border: 2px dashed black;
+}
+
+/* ------------- Header ------------- */
+
+header {
+    background-color: #B8CB21;    
+}
+
+.logo {
+    float: left;
+    width: 30%;
+    margin: 0 1% 1% 0;
+}
+
+.btnNav {
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav{
+    font-family: Oswald-Light;
+    padding: 3.04em 1em 3.04em 60%;
+    font-size: 1.3em;    
+    margin: 0;
+}
+
+
+
+
+
+/* ------------- Main -------------- */
+
+main {
+    background-color: #fff;
+    padding: 15px;
+}
+
+article {
+    padding: 8px;   
+    
+}
+.mainImg {
+    width: 35%;
+    float: left;
+    width: 30%;
+    margin: 0 1% 1% 0;
+}
+
+h2 {
+    font-family: Oswald-Light;
+    font-size: 1.8em;    
+    color: #B8CB21;
+}
+
+.btn {
+    margin: 8px 5px 15px 85%;
+    padding: 8px;
+    background-color: #B8CB21;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5%;
+}
+
+
+
+
+/* ------------- Footer ------------- */
+img {
+    margin: 1em;
+    width: 8%;
+}
+
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: auto;
+    background: rgba(165, 164, 164, 0.267);
+}
+
+#pFooter {
+    line-height: 30px;
+    text-indent: 0px;
+    text-align: center;
+}

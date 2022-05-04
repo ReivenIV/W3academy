@@ -1,0 +1,36 @@
+
+
+.rouge {
+    color: red;
+}
+.bleu {
+    color: blue;    
+}
+
+.vert {
+    color: green;
+}
+
+span {
+    color: rgb(94, 93, 93);
+}
+.f {
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+.Rouge{
+    background-color: red;
+}
+.Bleu{
+    background-color: rgb(145, 145, 255);
+}
+
+.Vert{
+    background-color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 3em 5em 1em;
+}

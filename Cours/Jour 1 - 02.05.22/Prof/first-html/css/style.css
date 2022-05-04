@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "RobotoSlab-regular";
+    src: url(../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf)
+}
+
+@font-face {
+    font-family: "RobotoSlab-Bold";
+    src: url(../fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf)
+}
+
+/* GLOBAL */
+
+html {
+    font-size: 62.5%; /* va ramener nos tailles à 1em ou 1rem = 10px*/
+}
+
+/* Je suis un commentaire en css */
+body {
+    margin: 0; /* marge extérieur je vise les 4 côtés */
+    /*
+    margin est une superpropriété qui regroupe toutes les propriété ci-dessous dans une seul
+    margin: 3px 0 0 1.2em;
+    
+    margin-right: 0;
+    margin-left: 1.2em;
+    margin-top: 3px;
+    margin-bottom: 0
+    */
+    font-size: 1.5rem; /* taille de la police d'écriture on peut utiliser plusieurs unités (px, em, rem, vh, %) 1em = 16px*/
+    font-family: "RobotoSlab-regular", "Arial";/* choix de la police d'écriture sur la balise choisie*/
+}
+
+
+
+
+/* HEADER */
+
+
+
+header {
+    /*background: content-box radial-gradient(crimson, skyblue);*/
+    padding: 5%;
+    background-image: url("../img/clock.jpg");
+    background-repeat: no-repeat; /*évite de répéter l'image si trop petite par rapport au parent (repeat-x sur l'horizontal et repeat-y sur la verticale*/
+    background-size: cover; /* taille du background ici cover va s'étaller sur tout le header*/
+    background-position: center; /* positionne notre background sur l'élément parent */
+    border: 2px solid green;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;/*4em = 40px*/
+    text-align: center; /*centre le titre*/
+    color: gold; /*les couleurs par défaut du navigateur, les couleurs au format rgb (red, green, blood), les couleur rgba (idem que rgb avec une transparence en plus, et les couleurs héxadécimale #FFFF */
+    font-style: italic;/*texte en italic*/
+}
+
+
+
+
+/* MAIN */
+
+
+
+
+section {
+    background-color: silver;
+    padding: 2%;
+}
+/* ici je vise les articles qui sont dans la section et pas les autres */
+section article {
+    background-color: white;
+    padding: 2%;
+    border: 1px solid black;
+    
+} 
+/* ici je vise précisement les éléments qui ont la classe coucou */
+.coucou {
+    margin: 2% 0;
+}
+/*body main section article h3*/
+.coucou h3{
+    color: red;
+}
+/* je vise l'id de ma photo (élément unique) */
+#jcvd-left{
+    width: 40%; /* largeur de l'élément (40% de la surface de son élément parent) */
+}
+
+ul {
+    list-style-type: none; /*enlève les puces de la liste à puces*/
+}
+
+ol {
+    background-color: green; /* fond de couleur */
+    width: 50%;
+    /*text-align: center;*/
+    /*margin: 10% 5% 10% 5%;  marge extérieur sens des aiguilles d'une montre haut, droite, bas, gauche*/
+    margin: 2% auto; /*centre nos éléments correctement*/
+    padding: 5%; /*marge intérieur à 2% sur les 4 côtés*/
+    border-radius: 10px 0 5px 20px; 
+    /* s'occupe des arrondis des angles de nos éléments 
+        border-left-radius: 20px;
+        border-right-radius: 0;
+        border-top-radius: 10px;
+        border-bottom-radius: 5px;
+    */
+}
+
+/*si je veut attaquer uniquement les li d'une seule des listes, je dois préciser son parent*/
+ol li{
+    background-color: silver;
+    border: 1px solid black;/*propriété des bordures*/
+    /*
+    border-top: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: black;
+    */
+    
+}
+
+/* FOOTER */
