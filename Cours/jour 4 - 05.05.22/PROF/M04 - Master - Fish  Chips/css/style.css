@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #424953;
+    line-height: 1.8;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 1em;
+    background-image: url(../img/fond.png);
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1100px;
+	min-width: 800px;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	font-family: "Slabo 27px";
+	font-weight: normal;
+	margin: 0;
+}
+
+/* CTA = Call To Action */
+.cta {
+	font-family: "Slabo 27px";
+	font-size: 1.1em;
+	color: white;
+	background-color: #1B9CA2;
+	padding: 5px 15px;
+	float: right;
+	margin-top: 15px;
+}
+
+.cta i {
+	margin-left: 10px;
+}
+
+.clear {
+    overflow: auto;
+}
+
+/* HEADER */
+header {
+    background-color: #25B3B4;
+	border-top: 5px solid #1B9CA2;
+	border-bottom: 5px solid #1B9CA2;
+	margin-top: 2%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-family: "Slabo 27px";
+	font-size: 1.4em;
+	color: white;
+	padding: 15px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.welcome {
+    text-align: center;
+    width: 70%;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+}
+
+.today {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #B6DFDD;
+    padding: 2%;
+}
+.today h2 {
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.today h2 span {
+	color: #1b9ca2;
+}
+
+.today article {
+    width: 45%;
+}
+.today h3 {
+    text-align: center;
+    font-size: 1.8em;
+}
+.today h3 i {
+	color: #25B3B4;
+	margin: 0 5px;
+	font-size: 0.8em;
+}
+.today article img {
+    float: left;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.today article p:nth-of-type(1){
+    margin-top: 0;
+}
+
+/* aside */
+
+aside {
+    width: 30%;
+    padding: 2.5%;
+    background-color: #25B3B4;
+	color: white;
+	border: 5px solid #1B9CA2;
+	position: relative;
+}
+
+aside img {
+    position: absolute;
+    top: -7%;
+    right: -15%;
+}
+
+aside h2 {
+	font-size: 1.4em;
+}
+
+aside span {
+	color: #B6DFDD;
+}
+
+aside a {
+	color: #B6DFDD;
+}
+
+aside p {
+	font-size: 0.9em;
+	margin: 0 0 15px;
+}
+
+/* FOOTER */
+
+/* LICENCE */
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}

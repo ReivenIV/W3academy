@@ -1,0 +1,194 @@
+/* --------------- General ------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    overflow: auto;
+}
+
+body {
+    background-image: url(../img/fond.png);
+
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../Font/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "Slabo27px-Regular";
+    src: url(../Font/Slabo27px-Regular.ttf);
+}
+
+p {
+    font-family: "OpenSans-Light";
+    line-height: 1.5em;
+}
+
+a:hover {
+    text-decoration: rgb(3, 104, 129) underline;
+    color: black;
+}
+
+
+
+/* --------------- Header ------------*/
+
+header {
+    background-color: #25B3B4;
+    text-align: center;
+    border-top: 3px solid #077575;
+    border-bottom: 3px solid #077575;
+    margin: 10em 0 0 0;
+}
+
+header img {
+    width: 25%;
+}
+
+Nav {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Slabo27px-Regular";
+    font-size: 2em;
+    margin: 0 1.5em;
+    color: aliceblue;
+}
+
+header section {
+    border: 2px solid black;
+}
+
+main {
+    min-width: 800px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* ------------- SecWelcome -----------------------*/
+.secWelcome {
+    text-align: center;
+    margin: 5em 10em;
+}
+
+h1 {
+    /*Titre Today*/
+    font-size: 3.5em;
+    text-align: center;
+}
+
+
+/* ----------------------------------- Main -----------------------------------*/
+/* ------------- secToday -----------------------*/
+
+.secToday {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 65%;
+    background-color: rgba(240, 248, 255, 0.356);
+    border-radius: 2%;
+}
+
+.secToday img {
+    border-radius: 50%;
+    float: left;
+}
+
+h2 {/*Titre Welcome*/
+    text-align: center;
+    width: 100%;
+    font-size: 2.5em;
+    font-family: "Slabo27px-Regular";
+}
+
+h3 {
+    /* Titre recipes */
+    font-size: 1.8em;
+    font-family: "Slabo27px-Regular";
+}
+
+
+.secToday article {
+    width: 48%;
+    padding: 3em;
+
+}
+
+.imgToday {
+    float: left;
+    border-radius: 50%;
+}
+
+.btn{
+    background-color: #25B3B4;    
+    padding: 0.5em;
+    color:aliceblue;
+    text-decoration: none;  
+    margin: 0 0 0 8em;  
+}
+
+
+
+/* --------------- Aside ------------*/
+
+aside {
+    width: 30%;
+    border: 5px solid #077575;
+    background-color: #25B3B4;
+    padding: 1%;
+    position: relative;
+}
+
+aside img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+h4 {
+    /* Titre news */
+    font-size: 1.4em;
+    font-family: "Slabo27px-Regular";
+}
+
+/* --------------- Footer ------------*/
+
+footer {
+    margin: 3em auto;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+footer img{   
+   margin: 0 auto;
+   width: 5%;   
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: rgb(0, 4, 255);
+}
