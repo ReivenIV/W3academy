@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">                 <!-- Responsive-->
+    <link rel="stylesheet" type="text/css" href="slider/slick/slick.css" />              <!-- Galerie Photos-->
+    <link rel="stylesheet" type="text/css" href="slider/slick/slick-theme.css" />        <!-- Galerie Photos-->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>CreaSoul M08</title>
+</head>
+
+<body>
+    <header>
+        <img src="img\logo.svg" alt="Logo CreaSoul">
+        <nav>
+            <a href="#">Nos produits</a>
+            <a href="#">Nos tarifs</a>
+            <a href="#">Contactez-nous</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <h1>DEVENEZ LE MOZART DE LA MOTO AVEC WOLD'<span>GANG</span></h1>
+            <!--Slider à rajouter-->       
+            <div class="slider">
+                <div>
+                    <img src="img\slider\1.jpg" />
+                </div>
+                <div>
+                    <img src="img\slider\2.jpg" />
+                </div>
+                <div>
+                    <img src="img\slider\3.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <h2>DECOUVREZ <span>NOS MOTOS</span></h2>
+            <article>
+                <img src="img/team/1.jpg" alt="moto 1">
+                <h3>MOTO #1</h3>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit reiciendis cumque blanditiis laudantium ducimus doloremque.</P>
+                <a href="#">En savoire plus</a>
+            </article>
+
+            <article>
+                <img src="img/team/2.jpg" alt="moto 2">
+                <h3>MOTO #1</h3>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit reiciendis cumque blanditiis laudantium
+                ducimus doloremque.</P>
+                <a href="#">En savoire plus</a>
+            </article>
+
+            <article>
+                <img src="img/team/3.jpg" alt="moto 3">
+                <h3>MOTO #1</h3>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit reiciendis cumque blanditiis laudantium
+                ducimus doloremque.</P>
+                <a href="#">En savoire plus</a>
+            </article>
+
+            <article>
+                <img src="img/team/4.jpg" alt="moto 4">
+                <h3>MOTO #1</h3>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit reiciendis cumque blanditiis laudantium
+                ducimus doloremque.</P>
+                <a href="#">En savoire plus</a>
+            </article>
+        </section>
+
+        <section class="section3">
+            <h2>POUR NOUS CONNAITRE <span>PLUS EN DETAIL</span></h2>
+
+            <div>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolor maiores rerum quas eius ut omnis molestiae. Omnis, ratione quia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At obcaecati error velit non dignissimos numquam consequuntur vero dolores, officiis voluptatibus expedita officia impedit sunt porro aperiam ipsam voluptate commodi delectus cumque quidem? Nobis, voluptatum totam!</p>
+                
+
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a> 
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <video controls src="video/video.webm"></video>
+            
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer>
+
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, esse tempora veritatis rerum est veniam aut porro cupiditate animi repellat deserunt rem, reiciendis fuga sint deleniti blanditiis nemo laudantium, ipsam libero distinctio repellendus quidem modi. Numquam accusamus eius nulla, commodi similique amet ratione omnis eos.</p>
+
+        <div class="footerA">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact Us</a>
+        </div>
+
+        <div class="divFooter">
+            <img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" />
+
+
+            <p>
+                Cet exercice de <a href="3wa.fr">3W Academy</a> est mis à disponisition <a href=""> pour l'usage des
+                    étudiants,
+                    Pas
+                    de Rediffusion - Attribution - Pas d'Utilisation Commercial
+                    - Pas de Modification - International.</a> Les autorisations au-délà du champ de cette licence
+                peuvent
+                être
+                obtenus auprés de <a href="#">contact@3wa.fr</a>. Les maquettes obtenus
+                été réalisées par <a href="#">Justine Muller</a>.
+            </p>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>           <!-- Galerie Photos-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    <!-- Galerie Photos-->
+    <script type="text/javascript" src="slider/slick/slick.min.js"></script>                        <!-- Galerie Photos-->
+
+    <script type="text/javascript">                                                                                                                                  
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+
+        });
+    </script>                                                                                       <!--Galerie Photos-->
+
+
+</body>
+
+</html>

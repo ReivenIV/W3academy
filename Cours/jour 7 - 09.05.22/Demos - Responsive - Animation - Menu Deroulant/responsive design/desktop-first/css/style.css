@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    border-bottom: 3px solid navy;
+    background-color: cyan;
+    color: navy;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 100px 0 50px 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+    border: 1px solid navy;
+    padding: 5px 10px;
+}
+
+nav {
+    margin: 2%;
+}
+
+/* MAIN */
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+article{
+    width: 40%;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid navy;
+    background-color: cyan;
+    color: navy;
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+/* ICI MES MEDIAS QUERIES */
+
+/* tout ce qui est en desous de 1024 px (version tablette) */
+@media screen and (max-width: 1024px) {
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px 0;
+    }
+    
+    h1{
+        font-size: 3em;
+        padding: 0;
+    }
+    h2{
+        font-size: 2em;
+    }
+    
+    footer {
+        justify-content: space-between;
+        padding: 0 5% ;
+    }
+    footer div {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* tout ce qui est en desous de 720 px (version mobile) */
+@media screen and (max-width: 720px) {
+    
+    header {
+        flex-direction: column;
+        padding: 100px 0 0 0;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    section{
+        flex-direction: column;
+    }
+    
+    article{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    article h3 {
+        text-align: center;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,94 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+article + article {
+	margin-top: 2em;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+.box {
+	width: 240px;
+	margin: 5em auto;
+	padding: 1em;
+	background-color: #fc3;
+}
+
+/* *****************************************************************
+TRANSFORM
+***************************************************************** */
+
+.test-transform-translate {
+	transform-origin: 50% 50%; /*point de départ d'origine de la transformation de l'élément*/
+	transform: translateX(10em); /* ordre de décallage de l'élément de 10em vers la droite */
+}
+
+.test-transform-scale {
+	transform-origin: 50% 50%;
+	transform: scale(0.5); /* on dézoom de 50%*/
+}
+
+.test-transform-rotate {
+	transform-origin: 50% 50%;
+	transform: rotate(45deg); /* rotation de mon élément de 45 degrés vers la droite */
+}
+
+.test-transform-skew {
+	transform-origin: 50% 50%;
+	transform: skewX(15deg); /* applannisement vers la gauche de 15 degrés*/
+}
+
+.test-transform-multiple {
+	transform-origin: 50% 50%;
+	transform: translateX(10em) scale(0.5) rotate(45deg);
+}
+
+/* *****************************************************************
+TRANSITION
+***************************************************************** */
+
+.test-transition {
+	transition: all 2s; /* on met une durée de changement d'apparence de 1s sur tous les éléments*/
+}
+
+.test-transition:hover {
+	background-color: #3cf;
+	transform: scale(2);
+	cursor: pointer;
+}
+
+/* *****************************************************************
+ANIMATION
+***************************************************************** */
+/*dans le keyframes, on déclare un nom d'animation (newspaper) puis on créer une animation entre un point départ et un point final */
+
+@keyframes newspaper { 
+	from { 
+		transform: scale(0) rotate(720deg); 
+	} 
+	to {
+		transform: scale(1) rotate(0);
+	} 
+}
+
+/* idem avec les % on peut gérer des étapes 0 20% 40% 60% 80% 100%*/
+/*@keyframes newspaper { 
+	0 { 
+		transform: scale(0) rotate(720deg); 
+	} 
+	50%{
+		transform: scale(0.5) rotate(360deg);
+	}
+	100% {
+		transform: scale(1) rotate(0);
+	} 
+}*/
+
+.test-animation {
+	background-color: #9c3;
+	animation: newspaper 2s;/*on appel notre animation sur l'élément que l'on souhaite avec une durée de transition de 1s*/
+}

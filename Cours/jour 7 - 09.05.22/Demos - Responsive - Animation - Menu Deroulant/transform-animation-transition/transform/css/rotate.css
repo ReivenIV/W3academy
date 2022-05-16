@@ -1,0 +1,26 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+.center {
+	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* *****************************************************************
+ TRANSFORM
+***************************************************************** */
+
+.rotate {
+	transform: rotate(90deg);
+	transition: all .7s;
+}
+
+.rotate:hover {
+	transform: rotate(0deg);
+}
+
+/* l'élément va passer de 90 degrés à 0 degrés en l'espace de 0.7s lors du survol*/

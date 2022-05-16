@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+/* On déclare nos variables css en leur attribuant leurs valeurs ici */
+:root{
+    --bckgcolor: navy;
+    --titlesize1: 4rem;
+    --titlesize2: 2rem;
+    --mainwidth: 80%;
+    --border: 1px solid black;
+    --artwidth: 30%;
+    --flx: space-between;
+    --blc: gold;
+    --titleclr: white;
+}
+
+body{
+    /* appel de variable */
+    background-color: var(--bckgcolor);
+}
+
+header, footer, h2, h3{
+    text-align: center;
+    color: var(--titleclr);
+}
+
+section {
+    background-color: white;
+    width: var(--mainwidth);
+    margin: 0 auto;
+    display: flex;
+    justify-content: var(--flx);
+    flex-wrap: wrap;
+}
+
+section h2{
+    flex-basis: 100%;
+}
+
+article{
+    border: var(--border);
+    width: var(--artwidth);
+    margin: 1% auto;
+    background-color: var(--bckgcolor);
+    color: var(--blc);
+}

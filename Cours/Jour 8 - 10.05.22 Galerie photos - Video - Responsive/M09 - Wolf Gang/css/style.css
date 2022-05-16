@@ -1,0 +1,364 @@
+@font-face {
+    font-family: "OpenSans-Medium.ttf";
+    src: url(../font/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "BodegaSans_Black";
+    src: url(../fonts/BodegaSans_Black.ttf);
+}
+
+/* --------------- General ------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*------- sizing text ------------*/
+
+
+
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+p {
+    font-family: "BodegaSans_Black";
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+
+
+
+
+/*--------------Body -----------------*/
+body {
+    background-image: url(../img/bg_body.svg);
+    background-color: rgb(105, 105, 105);
+
+}
+
+
+/* --------------- Header titre  - logo - nav ------------*/
+header {
+    background: -moz-linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+    background: -webkit-linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+    background: linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+}
+
+header img {
+    margin: 1em 4em;
+}
+
+nav {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+/* -------------- Main --------------*/
+
+main {
+
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+
+
+span {
+    color: #ff9d00;
+}
+
+/*Section 1 h1 + slider*/
+
+
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.slider {
+    width: 100%;
+    border: 5px solid white;
+    margin: 0 auto;
+}
+
+
+section{
+    margin-bottom: 2em;
+}
+
+/* Section 2 - Cards*/
+.cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cards article {
+    margin: 0.5em;
+    padding: 1.5em;
+    background-color: white;
+    width: 23.5%;
+}
+
+.cards h2 {
+    width: 100%;
+    text-align: left;
+    color: aliceblue;
+}
+
+.cards article h3 {
+    text-align: center;
+    border-bottom: 2px solid #ff9d00;
+    color: #ff9d00;
+    font-family: sans-serif;
+}
+
+.cards a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff9d00;
+    margin: 0 auto;
+    padding: 1em 2.5em;
+}
+
+
+
+
+/*Section 3 text+I - Video */
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    
+
+}
+
+.section3 h2 {
+    width: 100%;
+}
+
+.section3 div {
+    width: 40%;
+
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.fa-brands {
+    color: white;
+    font-size: 3em;
+    
+}
+
+.section3 p {
+    color: white;
+    font-size: 1.4em;
+    width: 100%;
+}
+
+
+
+
+
+
+/* --------------- Footer ------------*/
+
+footer {
+    text-align: center;
+    padding: 2%;
+    color: white;
+    border-top: 2px solid gray;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 2em;
+}
+footer h2{
+    font-size: 2em;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+footer img {
+    width: 3%;
+    margin-top: 2em;
+}
+
+Footer a {
+    text-decoration: none;
+    color: rgb(0, 4, 255);
+}
+
+Footer p{
+    color: white;
+}
+
+video {
+    padding: 0 0 2em ;
+    width: 50%;
+}
+
+/*------- Responsive -------------- */
+
+/*Tablete*/
+@media screen and (max-width: 1024px) {
+
+    /*Header Nav*/
+    nav a {
+        font-size: 1.4em;  
+    }
+
+    /* none
+    .cards{
+        display: none;
+    } */
+    /* Section 2 - cards */
+
+    .cards{      
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cards article {
+        width: 100%;
+    }
+    .cards article a{
+        padding: 2% 30%;
+        font-size: 2em;
+    }
+    .cards article p {
+        color: gray;
+    }
+
+    .cards article h3{
+        margin: 0.5em 0;
+    }
+    /* Section 3 - <I> video*/
+    .section3{
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section3 h2{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .section3 div{
+        width: 100%;        
+    }
+    .section3 div a{
+        margin: 3em 0;
+        font-size: 2em;
+    }
+    .section3 video{
+        margin: 3em 0; 
+        width: 100%;        
+    }
+
+    /*footer*/
+
+    footer p {
+        color: gray;
+        font-family: sans-serif;
+        font-size: 1em;
+    }
+    footer a {
+        color: white;
+        font-size: 1em;
+        border-bottom: 0.5px solid white;
+        font-family: sans-serif;
+    }
+    footer img{
+        width: 7.5%;
+        margin-top: 3em;
+    }
+}   
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+
+    /*Section2 Cards*/
+    .cards{
+        display: none;
+    }
+    .cards article a {
+            padding: 2% 7.5%;
+            font-size: 1.5em;
+        }
+    .cards article h3{
+        font-size: 1.5em;
+    }
+
+
+    /*Section 3 */
+    .section3 div  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 div a {
+        margin: 1em auto;
+    }
+
+    /*Footer*/
+    .footerA{
+        display: flex;
+        align-items: center;   
+    }
+    .footerA a {
+
+        margin: .5em;
+        
+    }
+}

@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: navy;
+    border: 1px solid navy;
+    padding: 5px 10px;
+}
+
+/* HEADER */
+
+header{
+    border-bottom: 3px solid navy;
+    background-color: cyan;
+    color: navy;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    padding: 100px 0 30px 0;
+    margin: 0;
+}
+
+/* MAIN */
+
+h2, h3 {
+    text-align: center;
+}
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid navy;
+    background-color: cyan;
+    color: navy;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* ICI MES MEDIAS QUERIES */
+
+/* tout ce qui est au dessus de 720 px (version tablette) */
+@media screen and (min-width: 720px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    h1{
+        padding: 100px 0;
+        font-size: 3em;
+    }
+    header nav{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30%;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    article{
+        width: 40%;
+    }
+    article h3 {
+        text-align: left;
+    }
+    
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5% ;
+    }
+}
+
+/* tout ce qui est au dessus de 1024 px (version desktop) */
+@media screen and (min-width: 1024px) {
+    
+    header{
+        flex-direction: column;
+    }
+    
+    h1 {
+        margin: 0;
+        font-size: 4em;
+        padding: 100px 0 100px 0;
+    }
+    
+    header nav{
+        margin-bottom: 2%;
+    }
+    
+    header nav a{
+        width: inherit;
+        margin: 0 5px;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    footer{
+        justify-content: space-around;
+    }
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+}

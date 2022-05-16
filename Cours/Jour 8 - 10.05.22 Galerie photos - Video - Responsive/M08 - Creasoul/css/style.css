@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "OpenSans-Medium.ttf";
+    src: url(../font/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "PTSansNarrow-Regular";
+    src: url(../font/PTSansNarrow-Regular.ttf);
+}
+
+/* --------------- General ------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*------- sizing text ------------*/
+
+h1 {
+    font-family: "PTSansNarrow-Regular";
+    font-size: 4rem;
+    border-bottom: 5px solid #30a894;
+    color: #30a894;
+}
+
+
+h2 {
+    font-family: "PTSansNarrow-Regular";
+    font-size: 2.4rem;
+    border-bottom: 3px solid #30a894;
+    color: #30a894;
+}
+
+h3 {
+
+    border-bottom: 2px solid #30a894;
+    color: #30a894;
+    font-size: 1.4em;
+    padding-bottom: 0.2em 0;
+}
+
+p {
+    font-family: "OpenSans-Medium.ttf";
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+
+
+
+
+/*--------------Body -----------------*/
+
+body {
+    background-color: rgba(242, 241, 244);
+}
+
+
+/* --------------- Header titre  - logo - nav ------------*/
+
+header {
+    width: 100%;
+    text-align: center;
+
+}
+
+nav {
+
+    /* border: 2px solid black; */
+    background-color: #30a894;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+
+/* -------------- Main --------------*/
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 7em;
+}
+
+section {
+    width: 70%;
+    margin: 0 2em;
+}
+
+aside {
+    width: 30%;
+    background-color: #B8DCB1;
+    padding: 0 1em;
+}
+
+/* --------------- Footer ------------*/
+
+footer {
+    text-align: center;
+    padding: 2%;
+    background: #30a894;
+    border-top: 2px solid gray;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+footer img {
+
+    width: 3%;
+}
+
+.pFooter a {
+    text-decoration: none;
+    color: rgb(0, 4, 255);
+}
+
+.pFooter {
+    color: white;
+}
+
+/*------- Responsive -------------- */
+
+/*Tablete*/
+@media screen and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+    aside{
+        width: 70%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 0.5em;
+        font-size: 2em;
+    }
+    
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+    aside {
+        display: none;
+    }
+    nav a {
+        margin: 0.5em;
+        font-size: 2em;
+    }
+    h1{
+        font-size: 2em;
+    }
+}

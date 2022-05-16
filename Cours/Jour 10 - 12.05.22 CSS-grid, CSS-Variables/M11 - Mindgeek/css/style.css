@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Candal-Regular";
+    src: url(../font/Candal-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../font/OpenSans-Light.ttf);
+}
+
+/* --------------- General ------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*------- sizing text ------------*/
+
+h1{
+    font-size: 3em;
+    font-family: "Candal-Regular";
+}
+
+h2{
+    font-size: 1.8em;
+    font-family: "Candal-Regular";
+    text-align: center;
+}
+
+h3{
+    font-size: 1.2em;
+    font-family: "Candal-Regular";
+}
+
+p{
+    font-size: 1.2em;
+    font-family: "OpenSans-Light";
+}
+a {
+    text-decoration: none;
+    font-family: "OpenSans-Light";
+    color: black;
+}
+
+
+/*--------------Body -----------------*/
+
+
+
+/* --------------- Header titre  - logo - nav ------------*/
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header nav{    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* padding: 0 15em; */
+        
+}
+
+header nav a{
+    text-align: center;
+    padding-left:6em;
+    font-size: 1.2em;
+}
+
+header nav .fa-solid, .fa-mandalorian{
+    color: rgb(253, 144, 162);
+    display: block;
+    margin-bottom: .5em;
+}
+
+
+
+
+
+/* ------------------------------Main------------------------------*/
+
+/*Section1*/
+.section1 {
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    width: 100%;
+    color: white;
+    padding: 10em 0;     
+}
+
+.section1 h1, p{
+    text-align: center;
+}
+
+.section1 p{
+    padding: 0 2em;
+}
+
+input{
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 1em 0 1em 6.5em;
+    background-color: rgb(253, 144, 162);
+    font-size: 1em;
+    color: white;
+    font-family: "OpenSans-Light";
+    font-weight: 700;   
+    border: none;
+}
+
+/*Section2*/
+
+.section2, .section3{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;    
+}
+.section2 h2{
+    width: 100%;    
+}
+
+.section2 article{
+    width: 33%;
+    margin-top: 2em;
+    padding: 0 2em;    
+}
+.section2 h3{
+    color: rgb(253, 144, 162);
+}
+
+.section2 .fa-solid{
+    color: rgb(253, 144, 162);
+    font-size: 3em;
+}
+
+
+/*Section3*/
+
+.section3{
+    margin-top: 3em;
+}
+
+.section3 h2 {
+    width: 100%;
+}
+
+.section3 article {
+    width: 33%;
+    margin-top: 2em;
+}
+
+.section3 h3 {
+    color: rgb(253, 144, 162);
+}
+
+.section3 .fa-solid, .fa-jedi{
+    color: rgb(253, 144, 162);
+    font-size: 3em;
+}
+
+/* --------------- Footer ------------*/
+
+footer {
+    text-align: center;
+    padding: 2%;
+    color: white;
+    border-top: 2px solid gray;
+
+    background-color: rgb(33,62,78);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 2em;    
+}
+footer h2{
+    font-size: 2em;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+footer img {
+    width: 3%;
+    margin-top: 2em;
+}
+
+Footer p{
+    color: white;
+}
+
+video {
+    padding: 0 0 2em ;
+    width: 50%;
+}
+
+/*------- Responsive -------------- */
+
+/*Tablete*/
+@media screen and (max-width: 1024px) {
+  
+}   
+
+/*Mobile*/
+@media screen and (max-width: 720px) { 
+}
